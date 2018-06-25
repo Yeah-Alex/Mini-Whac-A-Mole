@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cesped"
+    tools:context=".MainActivity2Activity">
+
+
+    <!--  ************ HOYOS DE TOPO  ************** -->
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/descripcion_hoyo"
+                android:src="@drawable/hoyo" />
+
+            <ImageView
+                android:contentDescription="@string/descripcion_hoyo"
+                android:src="@drawable/hoyo" />
+
+            <ImageView
+                android:contentDescription="@string/descripcion_hoyo"
+                android:src="@drawable/hoyo" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/descripcion_hoyo"
+                android:src="@drawable/hoyo" />
+
+            <ImageView
+                android:contentDescription="@string/descripcion_hoyo"
+                android:src="@drawable/hoyo" />
+
+            <ImageView
+                android:contentDescription="@string/descripcion_hoyo"
+                android:src="@drawable/hoyo" />
+
+        </TableRow>
+    </TableLayout>
+
+    <!--  ************ TOPOS  ************** -->
+    <TableLayout
+        android:id="@+id/topos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/descripcion_topo"
+                android:src="@drawable/topo1"
+                android:tag="1"
+                android:visibility="invisible"
+                android:onClick="desaparecerTopo"/>
+
+            <ImageView
+                android:contentDescription="@string/descripcion_topo"
+                android:src="@drawable/topo1"
+                android:tag="2"
+                android:visibility="invisible"
+                android:onClick="desaparecerTopo"/>
+
+            <ImageView
+                android:contentDescription="@string/descripcion_topo"
+                android:src="@drawable/topo1"
+                android:tag="3"
+                android:visibility="invisible"
+                android:onClick="desaparecerTopo"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/descripcion_topo"
+                android:src="@drawable/topo1"
+                android:tag="4"
+                android:visibility="invisible"
+                android:onClick="desaparecerTopo"/>
+
+            <ImageView
+                android:contentDescription="@string/descripcion_topo"
+                android:src="@drawable/topo1"
+                android:tag="5"
+                android:visibility="invisible"
+                android:onClick="desaparecerTopo"/>
+
+            <ImageView
+                android:contentDescription="@string/descripcion_topo"
+                android:src="@drawable/topo1"
+                android:tag="6"
+                android:visibility="invisible"
+                android:onClick="desaparecerTopo"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <!--  ************ TEXTO DE PUNTUACION Y TIEMPO  ************** -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/puntuacion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="PUNTUACIÓN: 0"
+                android:textColor="#f5f5f5"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tiempo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="TIEMPO: 60"
+                android:textColor="#f5f5f5"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
